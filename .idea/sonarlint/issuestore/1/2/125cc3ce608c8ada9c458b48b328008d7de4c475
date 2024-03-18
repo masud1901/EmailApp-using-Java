@@ -1,0 +1,39 @@
+
+“	java:S117C"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ó¼Ä«8Ô™óšå1J$d285b0ce-2825-40c2-9199-f6f33fd600d3
+“	java:S117E"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®˜Õó8Ô™óšå1J$8214fa47-2432-4d6b-b8e5-6ebd66f3eec5
+“	java:S117F"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³»ïÇ8Ô™óšå1J$42e288ff-395e-403b-b854-a7ad889e76b2
+_
+java:S1643L"Use a StringBuilder instead.(Ç›¨¬8Ö™óšå1J$4ed35b86-19d0-4515-a150-8effe8b6b4e0
+•
+java:S1104"MMake s a static final constant or non-public and provide accessors if needed.(±Ó‚–ÿÿÿÿÿ8Ø™óšå1J$df244484-abd3-4773-a3b0-259ba61730db
+\
+java:S1700"Rename field "email"(ª«Õìùÿÿÿÿ8Ú™óšå1J$11c4bd8d-5aec-41d5-a20f-e2f632d28fcd
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ï†¦ıÿÿÿÿ8İ™óšå1J$f4dcd27e-64a4-4f22-9f96-9d321f4762dd
+r	java:S106"+Replace this use of System.out by a logger.(È¶Ñùÿÿÿÿ8Ášóšå1J$1b568b0d-bf8f-4e84-9529-64c48ee16ecb
+•	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•é½óøÿÿÿÿ8Âšóšå1J$61cc81e3-9203-4e21-ad27-8f0655292643
+m	java:S106""+Replace this use of System.out by a logger.(šŞÊò8Æšóšå1J$f48c1d6c-25dd-4843-a930-fb03b90bd3ad
+m	java:S106&"+Replace this use of System.out by a logger.(ñè´Ò8Æšóšå1J$480a4a8d-c1b7-4836-8721-3463f50fef7e
+r	java:S1066"+Replace this use of System.out by a logger.(ËŠ”´ÿÿÿÿÿ8Éšóšå1J$a00e46e1-92a7-4b95-bf8a-b6a96f9fbe9e
+•	java:S100A"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹Ú¶ªÿÿÿÿÿ8Êšóšå1J$1aaf1d7e-8dc5-4e45-9827-f03fde772704
+`
+java:S2119B"Save and re-use this "Random".(¼İÅf8Ñšóšå1J$13cec952-2096-4a32-8318-b375b1d0f4b0
+
+java:S1117J"<Rename "password" which hides the field declared at line 14.(ò“Ó8Óšóšå1J$c08649a3-dd1a-49d1-a2f8-7f009e72cf5e
+•	java:S100S"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(È„ŠÈüÿÿÿÿ8Õšóšå1J$a9242e07-25db-4b91-ba28-d7d7b4eee41f
+r	java:S106V"+Replace this use of System.out by a logger.(¡±ûÿÿÿÿ8Øšóšå1J$e16ea180-efce-4a59-9201-9918dc6fbd19
+r	java:S106Z"+Replace this use of System.out by a logger.(–èËÎùÿÿÿÿ8Ùšóšå1J$7379d24c-951b-4b84-b44b-d418835051ee
+r	java:S106]"+Replace this use of System.out by a logger.(–èËÎùÿÿÿÿ8Ûšóšå1J$f06ac2dc-f612-46d0-81c4-61f10b25bc1c
+m	java:S106_"+Replace this use of System.out by a logger.(ğ¿¨Ñ8Üšóšå1J$bb306b1e-e10d-41f5-bf9e-f91d522dde8d
+m	java:S106a"+Replace this use of System.out by a logger.(Ì¶¶±8İšóšå1J$3c256ef7-6997-4119-acf8-91c2de8c884c
+m	java:S106e"+Replace this use of System.out by a logger.(‰™†—8Şšóšå1J$3d892a27-6d3e-4dc9-8aa7-64b46f5f715d
+r	java:S106g"+Replace this use of System.out by a logger.(†íÚ”ùÿÿÿÿ8Şšóšå1J$a032be5b-b060-41ad-bf7b-bd5f50aa8a48
+q
+java:S1068")Remove this unused "email" private field.(ª«Õìùÿÿÿÿ8ášóšå1J$1fc95028-6022-403b-ad0e-0d02c7e96b3d
+w
+java:S1068"4Remove this unused "alternativeEmail" private field.(Ìä¾‹8ášóšå1J$833f73ac-11c6-4998-9b0b-ee787bc09954
+{
+java:S1144"3Remove this unused private "generate_email" method.(•é½óøÿÿÿÿ8âšóšå1J$d522d305-9a74-46e8-a16b-25a9d483a564
+z
+java:S1144!"2Remove this unused private "setDepartment" method.(æØôÀûÿÿÿÿ8ãšóšå1J$88c31be4-64dc-42d2-84b6-a1c79fab7ecc
+~
+java:S1144A"6Remove this unused private "generate_password" method.(¹Ú¶ªÿÿÿÿÿ8ãšóšå1J$d085e558-5276-4e47-924a-5d2e1a83f97e
