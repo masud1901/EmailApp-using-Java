@@ -17,7 +17,7 @@ public class EmailApp {
         int choice;
 
         do {
-            System.out.println("\n******\nEnter your choice\n1. Show Info\n2. Change Password\n3. Change Mailbox Capacity\n4. Set Alternate Email\n5. Exit");
+            System.out.println("\n******\nEnter your choice\n1. Show Info\n2. Change Password\n3. Change Mailbox Capacity\n4. Set Alternate Email\n5.Store Data in File\n6.Display Data from File\n7.Exit");
             System.out.print("Choice: ");
             choice = scanner.nextInt();
             scanner.nextLine(); // Consume the remaining newline character
@@ -36,13 +36,19 @@ public class EmailApp {
                     emailOne.setAlternateEmail();
                     break;
                 case 5:
+                    emailOne.storeInFile();
+                    break;
+                case 6:
+                    emailOne.readFile();
+                    break;
+                case 7:
                     System.out.println("Exiting program...");
                     break;
                 default:
                     System.out.println("Invalid choice, please try again.");
                     break;
             }
-        } while (choice != 5);
+        } while (choice != 7);
 
         scanner.close();
     }

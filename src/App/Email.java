@@ -1,12 +1,16 @@
 package App;
 
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Random;
 import java.util.Scanner;
 
 public class Email {
     public Scanner s = new Scanner(System.in); //  Global Scanner instance
 
-    // Setting variables as private as we don't want to expose'
+    // Setting variables as private as we don't want to expose
     private final String firstName;
     private final String lastName;
     private final String emailAddress;
@@ -62,8 +66,8 @@ public class Email {
         String capitalCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         String numbers = "0123456789";
         String specialCharacters = "!@#$%^&*()_+";
-        String smallCharecters = "abcdefghijklmnopqrstuvwxyz";
-        String values = capitalCharacters + numbers + specialCharacters + smallCharecters;
+        String smallCharacters = "abcdefghijklmnopqrstuvwxyz";
+        String values = capitalCharacters + numbers + specialCharacters + smallCharacters;
 
 
         StringBuilder passwordString = new StringBuilder();
@@ -125,4 +129,34 @@ public class Email {
         System.out.println("Alternate Email: " + this.alternativeEmail);
     }
 
+    //    Store in File
+    public void storeInFile() {
+        try {
+            FileWriter writer = new FileWriter("/media/masud1901/CLASS & STUDY/My Learning Journey/My Java Projects/info.txt");
+            writer.write("Name: " + this.firstName + " " + this.lastName);
+            writer.write("\nDepartment: " + this.department);
+            writer.write("\nEmail: " + this.emailAddress);
+            writer.write("\nPassword: " + this.password);
+            writer.write("\nMail Capacity: " + this.mailCapacity);
+            writer.write("\nAlternate Email: " + this.alternativeEmail);
+            writer.close();
+            System.out.println("Data stored");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    //        Reading file method
+    public void readFile() {
+        try {
+            FileReader reader = new FileReader("/media/masud1901/CLASS & STUDY/My Learning Journey/My Java Projects/info.txt");
+            int i;
+            while ((i = reader.read()) != -1) {
+                System.out.print((char) i);
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
+
