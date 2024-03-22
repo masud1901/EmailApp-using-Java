@@ -51,11 +51,11 @@ public class Email {
             System.out.print("Enter Department Code: ");
             choice = s.nextInt();
 
-            if (choice >= 1 && choice <= departments.length) {
+            if (choice < 1 || choice > departments.length) {
+                System.out.println("Invalid choice, please try again.");
+            } else {
                 this.department = departments[choice - 1];
                 return this.department;
-            } else {
-                System.out.println("Invalid choice, please try again.");
             }
         } while (true);
     }
@@ -83,23 +83,18 @@ public class Email {
         char choice = s.next().toLowerCase().charAt(0);
 
         switch (choice) {
-            case 'y':
+            case 'y' -> {
                 System.out.print("Enter current password: ");
                 String currentPassword = s.next();
-                if (currentPassword.equals(this.password)) {
-                    System.out.print("Enter new password: ");
-                    this.password = s.next();
-                    System.out.println("Password changed successfully!");
-                } else {
+                if (!currentPassword.equals(this.password)) {
                     System.out.println("Invalid password. Password not changed.");
                 }
-                break;
-            case 'n':
-                System.out.println("Password change canceled.");
-                break;
-            default:
-                System.out.println("Invalid choice.");
-                break;
+                System.out.print("Enter new password: ");
+                this.password = s.next();
+                System.out.println("Password changed successfully!");
+            }
+            case 'n' -> System.out.println("Password change canceled.");
+            default -> System.out.println("Invalid choice.");
         }
     }
 
@@ -118,6 +113,7 @@ public class Email {
         this.alternativeEmail = s.next();
         System.out.println("Alternative email is successfully changed to " + this.alternativeEmail);
     }
+
 
     //    Display user information method
     public void showInfo() {

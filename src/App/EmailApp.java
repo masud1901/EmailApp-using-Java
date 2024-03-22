@@ -23,30 +23,14 @@ public class EmailApp {
             scanner.nextLine(); // Consume the remaining newline character
 
             switch (choice) {
-                case 1:
-                    emailOne.showInfo();
-                    break;
-                case 2:
-                    emailOne.changePassword();
-                    break;
-                case 3:
-                    emailOne.changeMailboxCapacity();
-                    break;
-                case 4:
-                    emailOne.setAlternateEmail();
-                    break;
-                case 5:
-                    emailOne.storeInFile();
-                    break;
-                case 6:
-                    emailOne.readFile();
-                    break;
-                case 7:
-                    System.out.println("Exiting program...");
-                    break;
-                default:
-                    System.out.println("Invalid choice, please try again.");
-                    break;
+                case 1 -> emailOne.showInfo();
+                case 2 -> emailOne.changePassword();
+                case 3 -> emailOne.changeMailboxCapacity();
+                case 4 -> emailOne.setAlternateEmail();
+                case 5 -> emailOne.storeInFile();
+                case 6 -> emailOne.readFile();
+                case 7 -> System.out.println("Exiting program...");
+                default -> System.out.println("Invalid choice, please try again.");
             }
         } while (choice != 7);
 
